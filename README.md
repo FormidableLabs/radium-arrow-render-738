@@ -6,7 +6,7 @@ Experiments for Radium issue: https://github.com/FormidableLabs/radium/issues/73
 ## Experiment
 
 - [`method-render.js`](src/method-render.js) - Works. Method-based `render`.
-- [`arrow-render.js`](src/arrow-render.js) - Works. Arrow function-based `render`.
+- [`arrow-render.js`](src/arrow-render.js) - **Fails**. Arrow function-based `render`.
 
 ## Usage
 
