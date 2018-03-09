@@ -1,0 +1,23 @@
+{
+  "name": "radium-arrow-render-738",
+  "version": "0.0.1",
+  "description": "Experiments for https://github.com/FormidableLabs/radium/issues/738",
+  "main": "index.js",
+  "repository": "https://github.com/FormidableLabs/radium-arrow-render-738",
+  "author": "Ryan Roemer <ryan.roemer@formidable.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib",
+    "render": "for f in $(ls lib); do printf \"\\n\\n## Running $f ##\\n\"; node lib/$f || echo 'failed'; done"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "radium": "^0.22.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
